@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>威廉希尔 – 快速识别·轻量介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #faf9f7;
+            color: #1e1e1c;
+            line-height: 1.6;
+        }
+
+        /* 窄正文 + 极简留白 */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* 顶部导航 */
+        nav {
+            padding: 20px 0 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #eae7e3;
+        }
+
+        .nav-logo {
+            font-weight: 500;
+            font-size: 1.15rem;
+            letter-spacing: 0.02em;
+            color: #2d2b28;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #5c5954;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #1e1e1c;
+        }
+
+        /* hero 区域 */
+        .hero {
+            padding: 80px 0 50px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            margin-bottom: 16px;
+            color: #1a1a18;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #4a4742;
+            max-width: 580px;
+            margin: 0 auto 32px;
+        }
+
+        .hero .tagline {
+            display: inline-block;
+            font-size: 0.9rem;
+            color: #7c7872;
+            background: #efede9;
+            padding: 6px 16px;
+            border-radius: 40px;
+            margin-top: 8px;
+        }
+
+        /* 核心介绍 */
+        .intro {
+            padding: 30px 0 50px;
+        }
+
+        .intro p {
+            margin-bottom: 18px;
+            color: #2f2d2a;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: color 0.15s;
+        }
+
+        .intro a:hover {
+            color: #0b1e33;
+        }
+
+        /* 三个场景模块 (卡片式) */
+        .scenes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin: 20px 0 50px;
+        }
+
+        .scene-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 28px 24px;
+            flex: 1 1 190px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02), 0 2px 8px rgba(0,0,0,0.02);
+            border: 1px solid #ebe7e2;
+            transition: box-shadow 0.2s;
+        }
+
+        .scene-card:hover {
+            box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+        }
+
+        .scene-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.005em;
+            margin-bottom: 10px;
+            color: #242220;
+        }
+
+        .scene-card p {
+            font-size: 0.92rem;
+            color: #504d48;
+            line-height: 1.5;
+        }
+
+        .scene-icon {
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 12px;
+            opacity: 0.75;
+        }
+
+        /* 常见说明 (FAQ 摘要) */
+        .faq-section {
+            padding: 30px 0 60px;
+            border-top: 1px solid #eae7e3;
+        }
+
+        .faq-section h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 28px;
+            color: #1e1e1c;
+        }
+
+        .faq-item {
+            margin-bottom: 22px;
+        }
+
+        .faq-item .question {
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #272522;
+        }
+
+        .faq-item .answer {
+            font-size: 0.95rem;
+            color: #4b4843;
+            padding-left: 4px;
+        }
+
+        .faq-item .answer a {
+            color: #1e3a5f;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        /* 底部 */
+        footer {
+            padding: 24px 0 40px;
+            border-top: 1px solid #eae7e3;
+            font-size: 0.8rem;
+            color: #7c7872;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        footer a {
+            color: #5c5954;
+            text-decoration: none;
+            border-bottom: 1px dotted #cdc9c3;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 18px;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .nav-links {
+                gap: 14px;
+                font-size: 0.85rem;
+            }
+            .scenes {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .scene-card {
+                flex: 1 1 auto;
+            }
+            footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 顶部导航 -->
+    <nav>
+        <span class="nav-logo">介绍页</span>
+        <div class="nav-links">
+            <a href="#">场景</a>
+            <a href="#">说明</a>
+            <a href="#">信息</a>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero">
+        <h1>威廉希尔 · 用途速览</h1>
+        <p>如果你正在查找与「威廉希尔」相关的信息，并希望快速判断它的用途与背景，这里提供一份清晰、克制的参考。</p>
+        <span class="tagline">轻量导航 · 无推广倾向</span>
+    </section>
+
+    <!-- 核心介绍 -->
+    <section class="intro">
+        <p>
+            <strong>威廉希尔</strong> 是一个在数字服务领域被多次提及的名称。无论你是因为偶然看到、朋友推荐，还是出于好奇搜索，本页旨在帮你更快理解它的常见用途与场景。下文将从三个典型使用方向出发，配合简要说明，供你判断是否符合你的需求。
+        </p>
+        <p>
+            如果你希望直接了解该服务本身，可以访问 
+            <a href="https://cn-site-williamhill.com">威廉希尔</a>
+            的官方网站。那里有更完整的介绍与最新信息。下面整理的场景与说明仅作为初步参考。
+        </p>
+    </section>
+
+    <!-- 三个场景模块 -->
+    <div class="scenes">
+        <div class="scene-card">
+            <span class="scene-icon">📋</span>
+            <h3>信息查询与浏览</h3>
+            <p>很多用户初次接触是为了查阅相关内容、了解服务范围或功能边界。通过官方页面可以快速获得第一手资料。</p>
+        </div>
+        <div class="scene-card">
+            <span class="scene-icon">🔍</span>
+            <h3>功能探索与比较</h3>
+            <p>部分访问者希望对比不同平台之间的差异，或确认某些功能是否存在。威廉希尔 相关的公开信息可以帮助你做出初步判断。</p>
+        </div>
+        <div class="scene-card">
+            <span class="scene-icon">📌</span>
+            <h3>日常使用参考</h3>
+            <p>对于已经有一定了解的用户，这里可作为快速回顾或书签导航。页面保持了简洁的结构，方便你随时回看。</p>
+        </div>
+    </div>
+
+    <!-- 常见说明 (FAQ 摘要) -->
+    <section class="faq-section">
+        <h2>常见简要说明</h2>
+
+        <div class="faq-item">
+            <div class="question">“威廉希尔” 是一个什么类型的名称？</div>
+            <div class="answer">
+                它通常指向一个在数字服务领域运营的品牌或平台。具体业务范围、适用地区以及服务条款，以官方发布为准。
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">如何获取最准确的官方信息？</div>
+            <div class="answer">
+                最直接的方式是访问 
+                <a href="https://cn-site-williamhill.com">威廉希尔</a>
+                的网站。所有公告、政策以及功能说明均会第一时间在那里更新。
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">本页与官方的关系是什么？</div>
+            <div class="answer">
+                这是一个独立的轻量介绍页面，仅用于帮助用户快速识别用途，不隶属或代表官方。内容力求客观、克制，不包含诱导或夸大的表述。
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">我接下来可以做什么？</div>
+            <div class="answer">
+                如果你已经确认感兴趣，可以直接前往 
+                <a href="https://cn-site-williamhill.com">威廉希尔</a>
+                浏览详细内容。如果还在了解阶段，本页的模块可以为你提供几个参考视角。
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <span>本页仅作用途识别参考</span>
+        <span>内容独立 · 非官方 · <a href="https://cn-site-williamhill.com">威廉希尔</a></span>
+    </footer>
+
+</div>
+
+</body>
+</html>
